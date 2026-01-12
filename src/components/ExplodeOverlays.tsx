@@ -1,4 +1,5 @@
 import { MotionValue, useTransform, motion } from 'framer-motion';
+import Link from 'next/link';
 import React from 'react';
 
 interface ExplodeOverlaysProps {
@@ -82,9 +83,9 @@ export default function ExplodeOverlays({ scrollYProgress }: ExplodeOverlaysProp
         <h2 className="text-4xl md:text-7xl font-bold tracking-tighter mb-8 text-white px-4 text-center">
           Built to see more.
         </h2>
-        <button className="hidden md:block pointer-events-auto bg-white text-black px-10 py-4 rounded-full text-lg font-medium tracking-wide hover:bg-gray-200 transition-colors">
+        <Link href="/buy" className="hidden md:block pointer-events-auto bg-white text-black px-10 py-4 rounded-full text-lg font-medium tracking-wide hover:bg-gray-200 transition-colors">
           Pre-order
-        </button>
+        </Link>
       </motion.div>
     </>
   );
