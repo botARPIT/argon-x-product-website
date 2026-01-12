@@ -6,7 +6,7 @@ import ExplodeLoader from './ExplodeLoader';
 import ExplodeOverlays from './ExplodeOverlays';
 
 // Configuration
-const FRAME_COUNT = 64;
+const FRAME_COUNT = 120;
 const FRAME_PATH = '/camera-sequence/frame_'; 
 const BUFFER_SIZE = 24; // Keep ~24 frames ahead/behind. ~0.5s of fast scroll.
 const LERP_FACTOR = 0.08; // Lower = smoother, Higher = more responsive.
